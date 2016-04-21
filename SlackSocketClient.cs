@@ -20,13 +20,15 @@ namespace SlackAPI
         public bool IsReady { get { return HelloReceived; } }
         public bool IsConnected { get { return underlyingSocket != null && underlyingSocket.Connected; } }
 
+        public SlackSocket UnderlyingSocket { get { return underlyingSocket; } }
+
+
         public event Action OnHello;
 		internal LoginResponse loginDetails;
 
         public SlackSocketClient(string token)
             : base(token)
         {
-            
         }
 
 		public override void Connect(Action<LoginResponse> onConnected, Action onSocketConnected = null)

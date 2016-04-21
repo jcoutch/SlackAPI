@@ -28,6 +28,8 @@ namespace SlackAPI
         public event Action<WebSocketException> ErrorReceiving;
         public event Action ConnectionClosed;
 
+        public ClientWebSocket UnderlyingWebSocket { get { return socket; } }
+
         //This would be done for hinting but I don't think we really need this.
 
         static Dictionary<string, Dictionary<string, Type>> routing;
