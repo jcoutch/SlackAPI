@@ -10,6 +10,8 @@ namespace SlackAPI
     {
         public string Pretext;
         public string text;
+        public string title;
+        public string title_link;
         public string fallback;
         public string color;
         public Field[] fields;
@@ -19,6 +21,6 @@ namespace SlackAPI
     public class Field{
         public string title;
         public string value;
-        public string @short;
+        public bool @short;
     }
 }
