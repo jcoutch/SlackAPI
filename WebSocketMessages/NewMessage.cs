@@ -12,9 +12,12 @@ namespace SlackAPI.WebSocketMessages
         public string channel;
         public string text;
         public string team;
-        public DateTime ts;
+        public string ts;
+        public string thread_ts;
 
         public List<Attachment> attachments;
+
+        public string ThreadParent => ts != thread_ts ? thread_ts : null;
 
         public NewMessage()
         {
