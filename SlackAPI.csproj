@@ -115,6 +115,7 @@
     <Compile Include="UserTeamCombo.cs" />
     <Compile Include="Utilities\ILockFree.cs" />
     <Compile Include="Utilities\LockFreeQueue.cs" />
+    <Compile Include="Utilities\SlackAction.cs" />
     <Compile Include="WebSocketMessages\ChannelArchive.cs" />
     <Compile Include="WebSocketMessages\ChannelCreated.cs" />
     <Compile Include="WebSocketMessages\ChannelDeleted.cs" />
