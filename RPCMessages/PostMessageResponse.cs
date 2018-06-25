@@ -9,6 +9,7 @@ namespace SlackAPI
     [RequestPath("chat.postMessage")]
     public class PostMessageResponse : Response
     {
-
+        public string channel;
+        public DateTime ts;
     }
 }
