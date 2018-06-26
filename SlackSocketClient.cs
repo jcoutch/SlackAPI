@@ -10,6 +10,7 @@ namespace SlackAPI
         SlackSocket underlyingSocket;
 
         public event Action<NewMessage> OnMessageReceived;
+        public event Action<DeletedMessage> OnMessageDeleted;
 
         bool HelloReceived;
         public const int PingInterval = 3000;
@@ -190,6 +191,12 @@ namespace SlackAPI
         public void UserTyping(Typing t)
         {
 
+        }
+
+        public void Deleted(DeletedMessage m)
+        {
+            if (OnMessageDeleted != null)
+                OnMessageDeleted(m);
         }
 
         public void Message(NewMessage m)

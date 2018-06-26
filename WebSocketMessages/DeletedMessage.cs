@@ -6,8 +6,8 @@ namespace SlackAPI.WebSocketMessages
     public class DeletedMessage : SlackSocketMessage
     {
         public string channel;
-        public DateTime ts;
-        public DateTime deleted_ts;
+        public string ts;
+        public string deleted_ts;
         public bool hidden;
     }
 }

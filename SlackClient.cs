@@ -484,11 +484,11 @@ namespace SlackAPI
             APIRequestWithToken(callback, parameters.ToArray());
         }
 
-        public void DeleteMessage(Action<DeletedResponse> callback, string channelId, DateTime ts)
+        public void DeleteMessage(Action<DeletedResponse> callback, string channelId, string ts)
         {
             List<Tuple<string, string>> parameters = new List<Tuple<string, string>>()
             {
-                new Tuple<string,string>("ts", ts.ToProperTimeStamp()),
+                new Tuple<string,string>("ts", ts),
                 new Tuple<string,string>("channel", channelId)
             };
 
