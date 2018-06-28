@@ -10,6 +10,6 @@ namespace SlackAPI
     public class DeletedResponse : Response
     {
         public string channel;
-        public DateTime ts;
+        public string ts;
     }
 }

@@ -6,6 +6,6 @@ namespace SlackAPI.WebSocketMessages
     public class ChannelMarked : SlackSocketMessage
     {
         public string channel;
-        public DateTime ts;
+        public string ts;
     }
 }
