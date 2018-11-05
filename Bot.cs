@@ -12,7 +12,7 @@ namespace SlackAPI
         public string image_192;
 
         public bool deleted;
-        public UserProfile icons;
+        //public UserProfile icons;
         public string id;
         public string name;
     }
