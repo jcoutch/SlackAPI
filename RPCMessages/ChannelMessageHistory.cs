@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SlackAPI
 {
-    [RequestPath("channels.history")]
+    [RequestPath("conversations.history")]
     public class ChannelMessageHistory : MessageHistory
     {
     }
